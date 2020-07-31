@@ -7,12 +7,12 @@ $def with(users)
 <table id="datos_imprimir" class="table table-hover" cellspacing="0" width="100%">
     <thead>
         <th>No.</th>
-        <th>User</th>
-        <th>Username</th>
-        <th>Status</th>
-        <th>Privilege</th>
-        <th>Force change pwd</th>
-        <th>Updated</th>
+        <th>Usuario</th>
+        <th>Nombre De Usuario</th>
+        <th>Estatus</th>
+        <th>Privilegio</th>
+        <th>Forzar cambio contraseña</th>
+        <th>Actuailizar</th>
     </thead>
     <tbody>
             $ i = 1
@@ -25,9 +25,9 @@ $def with(users)
             <td><a href='/users/view/$item.username'>$item.name</a></td>
             <td><a href='/users/view/$item.username'>$item.username.split('!')[0]</a></td>
             $if item.status == 0:
-                <td>Disabled</td>
+                <td>Deshabilitar</td>
             $else:
-                <td>Enabled</td>
+                <td>Habilitar</td>
 
             $if item.privilege == 0:
                 <td>Admin</td>
@@ -37,7 +37,7 @@ $def with(users)
             $if item.change_pwd == 0:
                 <td>No</td>
             $else:
-                <td>Yes</td>
+                <td>Si</td>
             <td>$item.created</td>
         </tr>
     </tbody>
