@@ -17,7 +17,7 @@ $def with (page)
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div style="background-color: #25bd2c;" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,8 +29,12 @@ $def with (page)
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class='active'><a href="/users"><span class="glyphicon glyphicon-list"></span> Users</a></li>
-                    <li><a href="/users/insert"><span class="glyphicon glyphicon-plus"></span>Insert</a></li>
+                    <li><a href="/paradas"><img src="/static/files/parada.png" width="40" height="30"></span>Paradas</a></li>
+                    <li><a href="/rutas"><img src="/static/files/ruta.png" width="40" height="30"></span>Rutas</a></li>
+                    <li><a href="/tarifas"><img src="/static/files/dolar.png" width="40" height="30"></span>Tarifas</a></li>
+                    <li class='active'><a href="/users"><img src="/static/files/usuario.png" width="40" height="30"></span> Usuarios</a></li>
+                    <li><a href="/logs"><img src="/static/files/log.png" width="40" height="30">Sesiones</a></li>
+                    <li><a href="/users/insert"><span><img src="/static/files/anadir.png" width="40" height="30" ></span> Insertar</a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +43,7 @@ $def with (page)
         <br><br> $:page
     </div>
 
-    <div class="navbar  navbar-inverse navbar-fixed-bottom">
+    <div style="background-color: #25bd2c;" class="navbar  navbar-inverse navbar-fixed-bottom">
         <div class="container">
             <div class="navbar-text pull=left">
                 <p> ©Tulanmap</p>
