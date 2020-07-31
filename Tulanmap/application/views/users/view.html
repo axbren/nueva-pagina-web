@@ -8,9 +8,9 @@ $def with(users)
 <strong>Username:</strong> $users.username <br>
 
 $if users.status == 0:
-    <strong>Status:</strong> Disabled <br>
+    <strong>Status:</strong> Deshabilitar <br>
 $else:
-    <strong>Status:</strong> Enabled <br>
+    <strong>Status:</strong> Habilitar <br>
 <strong>Email:</strong> $users.email <br>
 <strong>Other:</strong> $users.other_data <br>
 <strong>UserHash:</strong> $users.user_hash <br>
@@ -22,7 +22,7 @@ $else:
 $if users.change_pwd == 0:
     <strong>Force change password:</strong> No<br>
 $else:
-    <strong>Force change password:</strong> Yes<br>
+    <strong>Force change password:</strong> Si<br>
 
 <strong>Created:</strong> $users.created <br>
 <br>
